@@ -47,11 +47,11 @@ Data was then split into a training (80%) and test (80%) set.
 
 ### Training
 
-![Confusion matrix before learning rate tuning](https://github.com/loren-jiang/xtal-classifier/blob/master/confusion_matrix_pretune.png)
+![Confusion matrix before learning rate tuning](https://github.com/loren-jiang/xtal-clear/blob/master/confusion_matrix_pretune.png)
 
-![Top losses](https://github.com/loren-jiang/xtal-classifier/blob/master/top_9_losses.png)
+![Top losses](https://github.com/loren-jiang/xtal-clear/blob/master/top_9_losses.png)
 
-![Learning rate vs loss](https://github.com/loren-jiang/xtal-classifier/blob/master/learning_rate_tuning.png)
+![Learning rate vs loss](https://github.com/loren-jiang/xtal-clear/blob/master/learning_rate_tuning.png)
 
-![Confusion matrix after learning rate tuning](https://github.com/loren-jiang/xtal-classifier/blob/master/confusion_matrix_posttune.png)
+![Confusion matrix after learning rate tuning](https://github.com/loren-jiang/xtal-clear/blob/master/confusion_matrix_posttune.png)
 
