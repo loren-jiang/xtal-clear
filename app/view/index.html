@@ -1,0 +1,54 @@
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>xtal-classify</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='../static/style.css'>
+  <script src='../static/client.js'></script>
+</head>
+<body>
+<div>
+  <div class='center'>
+    <div class='title'>Crystal Drop Image Classifier</div>
+    <p>
+      <a href="https://arxiv.org/abs/1512.03385" target="_blank">ResNet34</a> classifier for drop images obtained from protein crystallization trials. 
+      <br/>
+      Training data from <a href="https://marco.ccr.buffalo.edu/" target="_blank">MARCO</a>. 
+      Built with <a href="https://colab.research.google.com/drive/16w2Mu5QBeBfedC0o1k8l9bVGUsKcT8lA" target="_blank">colab</a> 
+      and <a href="https://docs.fast.ai/" target="_blank">fastai</a>. 
+      <!-- Works best with .jpeg data from 
+      <a 
+        href="https://formulatrix.com/protein-crystallization-systems/rock-imager-crystallization-imagers/"
+        target="_blank"
+        > Formulatrix RockImagers </a>. -->
+    </p>
+    <div class='content'>
+      <div class='upload-label'>
+        <label id='upload-label'>No file chosen</label>
+      </div>
+      <div>
+        <img id='image-picked' class='no-display' alt='Chosen Image'>
+      </div>
+      <div class='no-display'>
+        <input id='file-input'
+               class='no-display'
+               type='file'
+               name='file'
+               accept='image/*'
+               onchange='showPicked(this)'>
+      </div>
+      <div class='analyze'>
+        <button class='choose-file-button' type='button' onclick='showPicker()'>Upload (.jpeg)</button>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+      </div>
+      <div class='result-label'>
+        <h3>Results</h3>
+        <div id="result-prediction"></div>
+        <br/>
+        <div id=result-probabilities></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

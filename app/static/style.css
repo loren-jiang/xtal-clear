@@ -1,0 +1,91 @@
+:root {
+    --bg-color: #fafafa;
+    --first-accent-color:rgb(42, 53, 207);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.no-display {
+    display: none;
+}
+
+.center {
+    margin: auto;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #262626;
+}
+
+.content {
+    margin-top: 2em;
+}
+
+.analyze {
+    margin-top: 2em;
+}
+
+.analyze button {
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    cursor: pointer;
+}
+
+.analyze button:hover {
+    filter: brightness(0.85);
+    -webkit-filter: brightness(.85);
+}
+
+.upload-label {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.result-label {
+    margin-top: 0.5em;
+    padding: 10px;
+    font-size: 13px;
+}
+
+button.choose-file-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: var(--bg-color);
+    border: solid 1px var(--first-accent-color);
+    font-size: 13px;
+    color: var(--first-accent-color);
+}
+
+button.analyze-button {
+    width: 200px;
+    height: 40px;
+    border: solid 1px var(--first-accent-color);
+    border-radius: 2px;
+    background-color: var(--first-accent-color);
+    font-size: 13px;
+    color: var(--bg-color);
+}
+
+button:focus {
+    outline: 0;
+}
+
+#image-picked {
+    max-height: 400px;
+}
+
+#result-prediction {
+    color: var(--first-accent-color);
+    font-weight: bold;
+    font-size: 2em;
+}
